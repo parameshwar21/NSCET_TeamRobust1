@@ -1,13 +1,29 @@
+Team Name: Team Robust 01
+College: Nadar Saraswathi College of Engineering and Technology
+
+Team Members:
+
+Parameshwar NS - Team Leader
+A Surya Prakash - Team Member
+P Gowsik - Team Member
+
+
 Real-Time Sign Language Translator for Virtual Meetings
+
 Project Overview
+
 This project aims to create a real-time sign language translator for virtual meetings, making online interactions more accessible for deaf and hard-of-hearing participants. The system captures spoken language during the meeting, converts it to text, and then translates that text into sign language. A 3D animated avatar performs the sign language gestures, displayed alongside the virtual meeting.
+
 Features
+
+
 1. Real-Time Speech-to-Text (STT) Conversion: Converts spoken language into text in real-time using speech recognition technology.
 2. Text-to-Sign Language Translation: Translates captured text into sign language and displays it using a 3D avatar.
 3. 3D Sign Language Avatar: A virtual avatar that performs sign language gestures corresponding to the meeting’s spoken content.
 4. Platform Integration: Easily integrates with virtual meeting platforms such as Zoom and Microsoft Teams.
 5. User-Customizable Avatar: Users can adjust the speed, appearance, and other settings of the 3D avatar.
 Prerequisites
+
 Ensure the following are installed before running the project:
 • Python (version 3.8+)
 • pip (Python package manager)
@@ -24,15 +40,19 @@ python -m venv venv
 Activate the virtual environment:
 Windows: venv\Scripts\activate
 macOS/Linux: source venv/bin/activate
+
 3. Install Dependencies
 Install the required Python packages using the provided requirements.txt:
 pip install -r requirements.txt
+
 4. Configure Speech-to-Text API
 Set up your speech-to-text API (e.g., Google Cloud Speech) and store your API credentials in a .env file.
 For Google Cloud: export GOOGLE_APPLICATION_CREDENTIALS="path-to-your-credentials.json"
+
 5. Set Up the 3D Avatar System
 • Unity 3D Users: Set up a new Unity project and integrate pre-built sign language animations. You can use resources like Mixamo for creating basic human avatar animations.
 • Three.js Users: Use Three.js to create and control a 3D model avatar. The animations should correspond to the translated sign language gestures.
+
 6. Run the Application
 Start the server to handle speech-to-text conversion and sign language translation:
 python app.py
